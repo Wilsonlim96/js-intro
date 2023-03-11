@@ -8,7 +8,7 @@
 const num = 10;
 const str = "10";
 
-if(num === str){ // Change the comparison operator
+if(num == str){ // Change the comparison operator
     console.log("Condition is true!");
 }
 
@@ -54,7 +54,22 @@ const temperature = 21;
 
 // Add code here
 
+if(weather === "snowy"){ // This condition will be checked first
 
+    console.log("I am wearing padded jacket");    
+
+}else if(weather === "rainy" && temperature > 23){
+
+    console.log("I am bringing an umbrella");
+
+}else if(weather === "rainy"){
+
+    console.log("I am wearing a raincoat");
+
+}else{ // This condition will execute when none conditions above is true
+    
+    console.log("Sunny Day");
+}
 
 /*
 
@@ -92,7 +107,11 @@ let isHealthy = false;
 const bmi = 25;
 
 // Refactor the if-else statement to use ternary operator
-if(bmi < 18.5 || bmi > 24.9) 
-    isHealthy = false;
-else
-    isHealthy = true;
+// if(bmi < 18.5 || bmi > 24.9) 
+//     isHealthy = false;
+// else
+//     isHealthy = true;
+
+
+healthstatus = bmi < 18.5 || bmi > 24.9 ? "Unhealthy" : "Healthy"; // if-else in a single line
+console.log(healthstatus)

@@ -4,10 +4,16 @@
     Hint - google with the right keyword will help you
 */
 
-const x = 10;
-const y = 20;
-y = y + x; // Refactor this expression by using Addition Assignment operator
+let x = 10;
+let y = 20;
+// y = y + x; // Refactor this expression by using Addition Assignment operator
+y += x;
+console.log(y)
 
-const a = 30;
-const b = 10;
-b = a - b; // Refactor this expression by using Subtraction Assignment operator
+
+let a = 30;
+let b = 10;
+// b = a - b; // Refactor this expression by using Subtraction Assignment operator
+a -= b // a = a - b
+b = a // assign value of a back to b
+console.log(b)

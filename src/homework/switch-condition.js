@@ -26,11 +26,7 @@ switch(environment){
         break;
 
     case "DEV": // edit this case
-        console.log("no provision");
-        break;
-    
     default:
         console.log("no provision");
-        break;
 }
 
